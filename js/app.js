@@ -29,7 +29,14 @@ if (postsSliders) {
 
     new Swiper(sliderEl, {
       loop: true,
-      slidesPerView: 4,
+      breakpoints: {
+        0: {
+          slidesPerView: 1.25
+        },
+        1024: {
+          slidesPerView: 4
+        }
+      },
       navigation: {
         nextEl: nextArrow,
         prevEl: prevArrow,
@@ -37,6 +44,3 @@ if (postsSliders) {
     });
   });
 }
-
-
-  
