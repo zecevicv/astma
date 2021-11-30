@@ -28,7 +28,6 @@ if (postsSliders) {
     const prevArrow = slider.querySelector('.prev');
 
     new Swiper(sliderEl, {
-      loop: true,
       breakpoints: {
         0: {
           slidesPerView: 1.25
