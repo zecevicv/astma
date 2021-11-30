@@ -316,6 +316,7 @@ body {
   width: 7.3vw;
   height: 7.3vw;
   padding-top: .6vw;
+  z-index: 2000;
 }
 
 .banner .circle {
@@ -1186,5 +1187,120 @@ body {
   .posts-slider .swiper-slide:nth-child(12) .post-card::after {
     top: -2vw;
     right: -2vw;
+  }
+}
+
+/* #Line
+================================================== */
+body {
+  position: relative;
+}
+
+.line {
+  position: absolute;
+  z-index: 1000;
+  left: 50%;
+  transform: translateX(-100%);
+  border-right: 1px dashed black;
+}
+
+.line .point {
+  width: 1.5vw;
+  height: 1.5vw;
+  border-radius: 50%;
+  position: relative;
+}
+
+.line .point::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: .45vw;
+  height: .45vw;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.line ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  transform: translateX(50%);
+}
+
+.line .point.purple {
+  background-color: #A82A81;
+}
+
+.line .point.white {
+  background-color: white;
+}
+
+/* First */
+.line-first {
+  top: 11.9vw;
+  height: 143vw;
+}
+
+.line-first .point.white::after {
+  background-color: #00988B;
+}
+
+/* Second */
+.line-second {
+  top: 183.5vw;
+  height: 204vw;
+}
+
+.line-second .point.white::after {
+  background-color: #1293EC;
+}
+
+.line-second .point.white:nth-child(4)::after,
+.line-second .point.white:nth-child(5)::after {
+  background-color: #B52877;
+}
+
+.line-second .point.white:nth-child(2) {
+  margin-top: -27vw;
+}
+
+.line-second .point.white:nth-child(3),
+.line-second .point.white:nth-child(4) {
+  margin-top: 5vw;
+}
+
+.line-second .point.white:nth-child(4) {
+  margin-top: 10vw;
+}
+
+@media (max-width: 1023.98px) {
+  .line {
+    left: auto;
+    right: 4vw;
+    transform: translateX(-100%);
+  }
+
+  .line .point {
+    width: 3.86vw;
+    height: 3.86vw;
+  }
+  
+  .line .point::after {
+    width: 1.2vw;
+    height: 1.2vw;
+  }
+
+  /* First */
+  .line-first {
+    display: none;
+  }
+
+  /* Second */
+  .line-second {
+    display: none;
   }
 }
