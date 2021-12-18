@@ -27,19 +27,36 @@ if (postsSliders) {
     const nextArrow = slider.querySelector('.next');
     const prevArrow = slider.querySelector('.prev');
 
-    new Swiper(sliderEl, {
-      breakpoints: {
-        0: {
-          slidesPerView: 1.25
+    if (slider.classList.contains('posts-slider-regular')) {
+      new Swiper(sliderEl, {
+        breakpoints: {
+          0: {
+            slidesPerView: 1.25
+          },
+          1024: {
+            slidesPerView: 4.6
+          }
         },
-        1024: {
-          slidesPerView: 4
-        }
-      },
-      navigation: {
-        nextEl: nextArrow,
-        prevEl: prevArrow,
-      },
-    });
+        navigation: {
+          nextEl: nextArrow,
+          prevEl: prevArrow,
+        },
+      });
+    } else {
+      new Swiper(sliderEl, {
+        breakpoints: {
+          0: {
+            slidesPerView: 1.25
+          },
+          1024: {
+            slidesPerView: 4
+          }
+        },
+        navigation: {
+          nextEl: nextArrow,
+          prevEl: prevArrow,
+        },
+      });
+    }
   });
 }
