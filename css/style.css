@@ -1333,3 +1333,42 @@ body {
     margin-bottom: -25vw;
   }
 }
+
+/* #Error
+================================================== */
+.error {
+  position: relative;
+}
+
+.error .bg,
+.error .bg img,
+.error .bg picture {
+  width: 100%;
+}
+
+.error .container {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.error .container a {
+  margin-top: 2vw;
+}
+
+@media (max-width: 1023.98px) {
+  .error .container {
+    top: 65%;
+  }
+
+  .error .container h1 {
+    margin-bottom: 1vw;
+  }
+  
+  .error .container a {
+    margin-top: 8.66vw;
+  }
+}
