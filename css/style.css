@@ -1903,9 +1903,9 @@ body {
   color: black;
 }
 
-.category-banner .bg,
-.category-banner .bg img,
-.category-banner .bg picture {
+.category-banner .img,
+.category-banner .img img,
+.category-banner .img picture {
   width: 100%;
 }
 
@@ -1915,6 +1915,7 @@ body {
   transform: translateY(-50%);
   right: 9.11vw;
   width: 29vw;
+  z-index: 1;
 }
 
 .category-banner .breadbrumbs {
@@ -1941,6 +1942,19 @@ body {
   margin-bottom: 1.5vw;
 }
 
+.category-banner .bg.light-purple {
+  background-image: linear-gradient(to top right, #CD619E, #D586B2);
+}
+
+.category-banner .bg {
+  right: 0;
+  border-bottom-left-radius: 10vw;
+  position: absolute;
+  top: 0;
+  width: 43%;
+  height: 29vw;
+}
+
 @media (max-width: 1023.98px) {
   .category-banner {
     color: white;
@@ -1956,6 +1970,15 @@ body {
 
   .category-banner h1 {
     margin-bottom: 2.66vw;
+  }
+
+  .category-banner .bg {
+    right: auto;
+    left: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 35vw;
+    width: 100%;
+    height: 85vw;
   }
 }
 
