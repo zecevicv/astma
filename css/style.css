@@ -1305,11 +1305,15 @@ body {
 
 .posts-slider .swiper-slide {
   padding: 2vw;
+  height: auto;
 }
 
 .posts-slider .post-card {
   box-shadow: 0 12px 23px rgba(0, 0, 0, .16);
   position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .posts-slider .swiper-slide .post-card::after {
@@ -1352,6 +1356,7 @@ body {
 .posts-slider .post-text {
   background-color: white;
   padding: 1.3vw 1.8vw 1.5vw 1.3vw;
+  flex-grow: 1;
 }
 
 .posts-slider .post-text ul {
