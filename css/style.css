@@ -2,6 +2,8 @@
 ================================================== */
 body {
   font-family: 'Rubik', sans-serif;
+  background-color: white;
+  color: black;
 }
 
 .text-purple {
@@ -86,6 +88,7 @@ body {
   width: 100%;
   background-color: transparent;
   z-index: 10000;
+  color: black;
 }
 
 .header::after {
@@ -780,6 +783,7 @@ body {
 ================================================== */
 .questionaire-form {
   position: relative;
+  color: black;
 }
 
 .questionaire-form .container {
@@ -823,6 +827,8 @@ body {
   background-repeat: no-repeat;
   background-position: 0 50%;
   background-size: 1vw .5vw;
+  background-color: white;
+  color: black;
 }
 
 @media (max-width: 1023.98px) {
@@ -953,6 +959,7 @@ body {
 .footer-main {
   background-color: #FAFAFA;
   overflow: hidden;
+  color: black;
 }
 
 .footer-main .container {
@@ -1355,6 +1362,7 @@ body {
 
 .posts-slider .post-text {
   background-color: white;
+  color: black;
   padding: 1.3vw 1.8vw 1.5vw 1.3vw;
   flex-grow: 1;
 }
@@ -2775,5 +2783,135 @@ body {
   
   .text-page-content p {
     margin-bottom: 4vw;
+  }
+}
+
+/* #Favorites
+================================================== */
+.favorites-page .footer-questionaire {
+  margin-top: 0;
+}
+
+.favorites {
+  color: black;
+  display: flex;
+}
+
+/* Sidebar */
+.favorites .sidebar {
+  flex: 0 0 16.35vw;
+  background-color: #FCFCFC;
+  padding-top: 11.35vw;
+}
+
+.favorites .sidebar a {
+  width: 100%;
+  padding: 1.22vw 1.5vw;
+  display: block;
+}
+
+.favorites .sidebar a.active {
+  background-color: rgba(213, 133, 177, .25);
+}
+
+/* Main */
+.favorites .main {
+  min-width: 0;
+  max-width: 100%;
+  min-height: 0;
+  max-height: 100%;
+  padding-top: 9.375vw;
+  padding-bottom: 7.3vw;
+}
+
+.favorites .tab-navigation {
+  padding-right: 4.16vw;
+  border-bottom: 3px solid #F1F1F1;
+}
+
+.favorites .tab-navigation .swiper-slide {
+  width: auto!important;
+}
+
+.favorites .tab-navigation .swiper-slide:not(:last-child) {
+  margin-left: 1.5vw;
+}
+
+.favorites .tab-navigation .swiper-slide a {
+  display: block;
+  padding-bottom: .65vw;
+  border-bottom: 3px solid transparent;
+}
+
+.favorites .tab-navigation .tab-btn.active {
+  border-color: #B52877;
+}
+
+@media (min-width: 1024px) {
+  .favorites .posts-slider.posts-slider-regular .text {
+    width: 91%;
+    padding-right: 4.16vw;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1023.98px) {
+  .favorites {
+    display: block;
+  }
+  
+  /* Sidebar */
+  .favorites .sidebar {
+    background-color: #FCFCFC;
+    padding-top: 21.33vw;
+  }
+
+  .favorites .sidebar ul {
+    display: flex;
+  }
+
+  .favorites .sidebar ul li {
+    flex: 0 0 33.3333%;
+    text-align: center;
+  }
+  
+  .favorites .sidebar a {
+    padding: 2.93vw 0;
+  }
+  
+  /* Main */
+  .favorites .main {
+    padding-top: 8.66vw;
+    padding-bottom: 7.3vw;
+  }
+  
+  .favorites .tab-navigation {
+    padding-right: 5.73vw;
+  }
+
+  .favorites .posts-slider .swiper-arrows {
+    display: none;
+  }
+  
+  .favorites .tab-navigation .swiper-slide {
+    width: auto!important;
+  }
+  
+  .favorites .tab-navigation .swiper-slide {
+    margin-left: 7.33vw!important;
+  }
+  
+  .favorites .tab-navigation .swiper-slide a {
+    padding-bottom: 3.33vw;
+  }
+  
+  .favorites .posts-slider.posts-slider-regular .text {
+    padding-right: 0;
+  }
+
+  .posts-slider.posts-slider-regular .heading {
+    margin-bottom: 5.33vw;
+    padding-right: 5.73vw;
+    padding-left: 8vw;
   }
 }

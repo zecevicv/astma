@@ -97,3 +97,11 @@ if (postsSliders) {
 
   });
 }
+
+/* #Favorites
+  ======================================================= */
+if (document.querySelector('.favorites .tab-navigation .swiper')) {
+  new Swiper(".favorites .tab-navigation .swiper", {
+    slidesPerView: "auto",
+  });
+}
